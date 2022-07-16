@@ -126,7 +126,7 @@ button{
 
 @media screen and (max-width:1219px) {
     .cabecalho{
-        height: 115px;;
+        height: 115px;
     }
     
     .cabecalho__menu{
@@ -179,8 +179,8 @@ button{
 
     #cabecalho__navegacao.ativo .cabecalho__menu{
         background-color: var(--cor-fundo);
-        height: calc(100vh - 115px);
-        
+        /*Possível mudança no futuro*/
+        height: 620px ;
         visibility: visible;
     }
 

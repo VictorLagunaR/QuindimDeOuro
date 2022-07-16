@@ -1,16 +1,21 @@
-#image-carousel{
+.sabores{
     display: flex;
     flex-direction: column;
-    padding: 1rem 2rem;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.splide{
+    padding: 0rem 1rem;
 }
 
 .sabores__titulo{
     color: var(--cor-titulo);
     text-align: center;
-    font-size: 1.7em;
+    font-size: 1.6em;
     font-weight: 700;
     line-height: 1.1em;
-    padding: 1rem 0;
+    padding: 1rem 10px;
 }
 
 .sabores__secao, .splide__track{
@@ -96,4 +101,18 @@
 .splide__slide{
     height: 350px;
     padding: 0 1rem;
+}
+
+@media screen and (min-width:0) {
+    .sabores{
+        width:auto;
+    }
+
+    .sabores__titulo{
+        padding: 1.5rem .5rem 0 .5rem;
+    }
+
+    .splide{
+        padding: 1rem 2rem;
+    }
 }

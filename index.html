@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/corpo.css">
     <link rel="stylesheet" href="assets/css/sabores.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
+    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/themes/splide-sea-green.min.css">
 
     <title>Quindim de Ouro</title>
 </head>
@@ -56,49 +56,51 @@
         </nav>
     </header>
     <main>
-        <section id="image-carousel" class="splide sabores" aria-label="Beautiful Images">
+        <section class="sabores">
             <h1 class="sabores__titulo">Conheça todos os nossos doces e salgados</h1>
-            <div class="splide__track">
-                  <ul class="splide__list">
-                      <li class="splide__slide">
-                        <a href="" class="container__link">
-                            <img src="assets/imagens/bolos.jpg" alt="" class="container__imagem">
-                            <h1 class="container__titulo">Bolos</h1>
-                            <p class="container__botao">Saiba Mais</p>                    
-                        </a>
-                      </li>
-                      <li class="splide__slide">
-                        <a href="" class="container__link">
-                            <img src="assets/imagens/brigadeiros.jpg" alt="" class="container__imagem">
-                            <h1 class="container__titulo">Brigadeiros</h1>
-                            <p class="container__botao">Saiba Mais</p>
-                        </a>
-                      </li>
-                      <li class="splide__slide">
-                        <a href="" class="container__link">
-                            <img src="assets/imagens/bombom-de-morango.jpg" alt="" class="container__imagem">
-                            <h1 class="container__titulo">Sobremesas</h1>
-                            <p class="container__botao">Saiba Mais</p>                    
-                        </a>
-                      </li>
-                      <li class="splide__slide">
-                        <a href="" class="container__link">
-                            <img src="assets/imagens/quindim.jpg" alt="" class="container__imagem">
-                            <h1 class="container__titulo">Quindim</h1>
-                            <p class="container__botao">Saiba Mais</p>
-                        </a>
-                      </li>
-                      <li class="splide__slide">
-                        <a href="" class="container__link">
-                            <img src="assets/imagens/bombom-de-morango.jpg" alt="" class="container__imagem">
-                            <h1 class="container__titulo">Celebrações</h1>
-                            <p class="container__botao">Saiba Mais</p>
-                        </a>
-                      </li>
-
-                  </ul>
-            </div>
-          </section>
+            <section class="splide" id="image-carousel">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                          <a href="" class="container__link">
+                              <img src="assets/imagens/bolos.jpg" alt="" class="container__imagem">
+                              <h1 class="container__titulo">Bolos</h1>
+                              <p class="container__botao">Saiba Mais</p>                    
+                          </a>
+                        </li>
+                        <li class="splide__slide">
+                          <a href="" class="container__link">
+                              <img src="assets/imagens/brigadeiros.jpg" alt="" class="container__imagem">
+                              <h1 class="container__titulo">Brigadeiros</h1>
+                              <p class="container__botao">Saiba Mais</p>
+                          </a>
+                        </li>
+                        <li class="splide__slide">
+                          <a href="" class="container__link">
+                              <img src="assets/imagens/bombom-de-morango.jpg" alt="" class="container__imagem">
+                              <h1 class="container__titulo">Sobremesas</h1>
+                              <p class="container__botao">Saiba Mais</p>                    
+                          </a>
+                        </li>
+                        <li class="splide__slide">
+                          <a href="" class="container__link">
+                              <img src="assets/imagens/quindim.jpg" alt="" class="container__imagem">
+                              <h1 class="container__titulo">Quindim</h1>
+                              <p class="container__botao">Saiba Mais</p>
+                          </a>
+                        </li>
+                        <li class="splide__slide">
+                          <a href="" class="container__link">
+                              <img src="assets/imagens/bombom-de-morango.jpg" alt="" class="container__imagem">
+                              <h1 class="container__titulo">Celebrações</h1>
+                              <p class="container__botao">Saiba Mais</p>
+                          </a>
+                        </li>
+  
+                    </ul>
+              </div>
+            </section>
+        </section>
     </main>
 
     <footer>
@@ -109,22 +111,24 @@
     
     <script src="assets/js/menu.js"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="/node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
     
     <script>
         var splide = new Splide( '.splide', {
         updateOnMove: true,
+        cover   : true,
         type   : 'loop',
         perPage     : 3,
         perMove     : 1,
         focus  : 'center',
+        autoplay: true,
+        pauseOnHover:true,
         breakpoints:{
             600:{
                 perPage:1,
             },
             1000:{
                 perPage:2,
-                perMove: 2,
             }
         }
         } );
