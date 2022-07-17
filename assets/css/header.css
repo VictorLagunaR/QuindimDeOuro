@@ -8,6 +8,7 @@
     padding:1.5rem;
     position: relative;
     z-index: 9999;
+    box-shadow: 2px 0 10px 0 #e7e6e6;
 }
 
 .cabecalho__container{
