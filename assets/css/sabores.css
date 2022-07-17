@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    max-width: 1100px;
 }
 
 .splide{
@@ -12,10 +11,11 @@
 .sabores__titulo{
     color: var(--cor-titulo);
     text-align: center;
-    font-size: 1.6em;
-    font-weight: 700;
+    font-family: var(--fonte-h1);
+    font-size: 3.5rem;
+    font-weight: 500;
     line-height: 1.1em;
-    padding: 1rem 10px;
+    padding: 2rem .5rem 0 .5rem;
 }
 
 .sabores__secao, .splide__track{
@@ -62,7 +62,7 @@
 }
 
 .container__titulo{
-    color: #e9e9e9;
+    color: #f0f0f0;
     font-weight: 500;
     font-size: 30px;
     position: absolute;
@@ -103,16 +103,25 @@
     padding: 0 1rem;
 }
 
-@media screen and (min-width:0) {
+@media screen and (max-width:1219px) {
     .sabores{
         width:auto;
     }
 
-    .sabores__titulo{
-        padding: 1.5rem .5rem 0 .5rem;
-    }
-
     .splide{
         padding: 1rem 2rem;
+    }
+}
+
+@media screen and (min-width:1220px) {
+    .sabores{
+        align-items: center;
+        flex-direction: row;
+        gap: 3rem;
+        justify-content: space-around;
+        max-width: 1300px;
+    }
+    #image-carousel{
+        width: 1000px;
     }
 }

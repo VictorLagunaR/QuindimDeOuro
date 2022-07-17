@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@100&family=Montserrat&family=Oswald:wght@311&family=Poppins:wght@200;300;400;500&family=Raleway:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Courgette&family=Edu+VIC+WA+NT+Beginner:wght@500&family=Inter:wght@100&family=Montserrat&family=Oswald:wght@311&family=Poppins:wght@200;300;400;500&family=Raleway:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Courgette&family=Edu+VIC+WA+NT+Beginner:wght@500&family=Inter:wght@100&family=Montserrat&family=Oswald:wght@311&family=Poppins:wght@200;300;400;500&family=Raleway:wght@300;400;500&display=swap');
+
 :root{
     --cor-borda:#A67926;
     --cor-fundo:#FCF0D9;
     --cor-texto:#131313;
-    --cor-titulo:#8C6535;
-    --cor-texto-botoes:#69471d;
+    --cor-titulo:#8D6630;
+    --cor-texto-botoes:#694B26;
     --fonte: 'Poppins', sans-serif;
+    --fonte-titulo:'Allura', cursive;
+    --fonte-h1:'Courgette', cursive;
 }
