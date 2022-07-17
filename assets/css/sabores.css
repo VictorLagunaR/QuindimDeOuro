@@ -4,6 +4,8 @@
     margin: 0 auto;
     background-color: var(--cor-titulo);
     padding-bottom: 1rem;
+    opacity: 0;
+    transition: .7s;
 }
 
 .splide{
@@ -117,6 +119,10 @@
 
     .splide{
         padding: 1rem 2rem;
+    }
+
+    .sabores__titulo{
+        font-size: 30px;
     }
 }
 

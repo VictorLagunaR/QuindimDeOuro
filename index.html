@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="assets/css/variaveis.css">
+    <link rel="stylesheet" href="assets/css/animacoes.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/corpo.css">
     <link rel="stylesheet" href="assets/css/sabores.css">
@@ -19,10 +20,13 @@
 <body>
     <header class="cabecalho">
         <div class="cabecalho__container">
-            <a href="index.html" class="cabecalho__link">
-                <img src="assets/imagens/logo.png" alt="Logo Quindim de Ouro" class="cabecalho__img">
-            </a>
-            <h1 class="cabecalho__nome">Quindim de Ouro</h1>
+            <div class="container__logo">
+                <a href="index.html" class="cabecalho__link">
+                    <img src="assets/imagens/logo.png" alt="Logo Quindim de Ouro" class="cabecalho__img">
+                </a>
+                <h1 class="cabecalho__nome">Quindim de Ouro</h1>
+            </div>
+            
         </div>
         <nav id="cabecalho__navegacao">
             <ul class="cabecalho__menu">
@@ -60,7 +64,7 @@
         </nav>
     </header>
     <main>
-        <section class="sabores">
+        <section class="sabores" data-animacao="bottom">
             <h1 class="sabores__titulo">Conheça todos os nossos doces e salgados</h1>
             <section class="splide" id="image-carousel">
                 <div class="splide__track">
@@ -141,5 +145,6 @@
         splide.mount();
 
     </script>
+    <script src="assets/js/animacao.js"></script>
 </body>
 </html>

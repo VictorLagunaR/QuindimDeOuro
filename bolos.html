@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="assets/css/variaveis.css">
+    <link rel="stylesheet" href="assets/css/animacoes.css">
     <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/banner.css">
     <link rel="stylesheet" href="assets/css/corpo.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <title>Quindim de Ouro - Bolos</title>
@@ -23,7 +25,7 @@
         </div>
         <nav id="cabecalho__navegacao">
             <ul class="cabecalho__menu">
-                <li class="menu__lista"><a href="#" class="menu__link">A Quindim de Ouro</a></li>
+                <li class="menu__lista"><a href="quindim-de-ouro.html" class="menu__link">A Quindim de Ouro</a></li>
                 <li class="menu__lista" id="produtos">
                     <button class="menu__botao">
                         Produtos
@@ -33,12 +35,12 @@
                     </button>
                     
                     <ul id="submenu">
-                        <li class="submenu__lista"><a href="#" class="menu__link">Bolos</a></li>
-                        <li class="submenu__lista"><a href="#" class="menu__link">Brigadeiros</a></li>
-                        <li class="submenu__lista"><a href="#" class="menu__link">Sobremesas</a></li>
-                        <li class="submenu__lista"><a href="#" class="menu__link">Quindim</a></li>
-                        <li class="submenu__lista"><a href="#" class="menu__link">Salgados</a></li>
-                        <li class="submenu__lista"><a href="#" class="menu__link">Celebrações</a></li>
+                        <li class="submenu__lista"><a href="bolos.html" class="menu__link">Bolos</a></li>
+                        <li class="submenu__lista"><a href="brigadeiros.html" class="menu__link">Brigadeiros</a></li>
+                        <li class="submenu__lista"><a href="sobremesas.html" class="menu__link">Sobremesas</a></li>
+                        <li class="submenu__lista"><a href="quindim.html" class="menu__link">Quindim</a></li>
+                        <li class="submenu__lista"><a href="salgados.html" class="menu__link">Salgados</a></li>
+                        <li class="submenu__lista"><a href="celebracoes.html" class="menu__link">Celebrações</a></li>
                     </ul>
                 </li>
                 <li class="menu__lista"><a href="loja.html" class="menu__link">Loja</a></li>
@@ -57,6 +59,17 @@
         </nav>
     </header>
 
+    <main class="contaienr">
+        <section id="banner">
+            <img src="assets/imagens/banner.jpg" alt="" class="banner__imagem" data-animacao="bottom">
+            <div class="banner__conteudo" data-animacao="bottom">
+                <h1 class="banner__titulo">Bolos</h1>
+                <h2 class="banner__descricao">Os melhores quindins você encontra aqui</h2>
+            </div>
+        </section>
+    </main>
+
     <script src="assets/js/menu.js"></script>
+    <script src="assets/js/animacao.js"></script>
 </body>
 </html>

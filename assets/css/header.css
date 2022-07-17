@@ -17,6 +17,12 @@
     gap: .7rem;
 }
 
+.container__logo{
+    align-items: center;
+    gap: .5rem;
+    display: flex;
+}
+
 .cabecalho__img{
     width:5rem;
 }
@@ -143,20 +149,21 @@ button{
 
 @media screen and (max-width:1219px) {
     .cabecalho{
-        height: 115px;
+        height: 95px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
     }
 
     .cabecalho__nome{
-        font-size: 30px;
+        display: none;
     }
-    
     .cabecalho__menu{
         visibility: hidden;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         left: 0;
-        top: 100px;
+        top: 90px;
         overflow: hidden;
         position: absolute;
         transition: .6s;
@@ -259,7 +266,7 @@ button{
         justify-content: space-around;
     }
 
-    
+
 
     .cabecalho__menu{
         display: flex;
