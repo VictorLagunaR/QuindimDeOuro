@@ -23,11 +23,16 @@ footer img{
     align-items: center;
 }
 
+.footer__conteudo p {
+    font-size: 16px;
+    text-align: left;
+}
+
 .footer__telefone,.footer__telefone a {
     color: var(--cor-texto);
 }
 
-@media screen and (min-width:1220px) {
+@media screen and (min-height:687px) and (min-width:1220px) {
     footer{
         position: fixed;
         bottom: 0;

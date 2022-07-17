@@ -70,6 +70,7 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 4rem;
+    text-shadow: 1px 1px rgb(36, 36, 36);
 }
 
 .container__botao{
