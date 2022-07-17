@@ -51,7 +51,7 @@ button{
 .menu__lista{
     display: flex;
     align-items: center;
-    border-radius: 7px;
+    border-radius: 10px;
     font-weight: 500;
     padding: .7rem;
     transition: all .2s ease-in-out;
@@ -61,7 +61,7 @@ button{
 
 .menu__lista:hover{
     cursor: pointer;
-    background-color: #F2F2F2;
+    background-color: #fefefe;
 }
 
 .menu__link{
@@ -314,11 +314,12 @@ button{
 
 
     .app:hover{
+        color: var(--cor-titulo);
         cursor: pointer;
         background-color: transparent;
     }
 
-    .app:hover a{
+    .app:hover .redes-socias ~ a{
         color: var(--cor-texto);
     }
 }
