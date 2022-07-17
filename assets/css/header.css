@@ -8,7 +8,7 @@
     padding:1.5rem;
     position: relative;
     z-index: 9999;
-    box-shadow: 2px 0 10px 0 #e7e6e6;
+    box-shadow: 0px 0 5px 0 #e7e6e6;
 }
 
 .cabecalho__container{
@@ -147,7 +147,7 @@ button{
     }
 
     .cabecalho__nome{
-        font-size: 39px;
+        font-size: 30px;
     }
     
     .cabecalho__menu{
@@ -258,6 +258,8 @@ button{
     .cabecalho{
         justify-content: space-around;
     }
+
+    
 
     .cabecalho__menu{
         display: flex;

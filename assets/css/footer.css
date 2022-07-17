@@ -32,7 +32,7 @@ footer img{
     color: var(--cor-texto);
 }
 
-@media screen and (min-height:687px) and (min-width:1220px) {
+@media screen and (min-height:887px) and (min-width:1220px) {
     footer{
         position: fixed;
         bottom: 0;
