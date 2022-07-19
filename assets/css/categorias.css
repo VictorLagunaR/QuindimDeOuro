@@ -6,6 +6,7 @@
     background-color:var(--cor-titulo);
     padding: 1rem 0;
     width: 100vw;
+    margin-bottom: 1rem;
 }
 
 .categorias__titulo{
