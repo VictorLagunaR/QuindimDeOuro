@@ -12,16 +12,21 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/banner.css">
     <link rel="stylesheet" href="assets/css/corpo.css">
+    <link rel="stylesheet" href="assets/css/categorias.css">
+    <link rel="stylesheet" href="assets/css/produtos.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <title>Quindim de Ouro - Bolos</title>
 </head>
 <body>
     <header class="cabecalho">
         <div class="cabecalho__container">
-            <a href="index.html" class="cabecalho__link">
-                <img src="assets/imagens/logo.png" alt="Logo Quindim de Ouro" class="cabecalho__img">
-            </a>
-            <h1 class="cabecalho__nome">Quindim de Ouro</h1>
+            <div class="container__logo">
+                <a href="index.html" class="cabecalho__link">
+                    <img src="assets/imagens/logo.png" alt="Logo Quindim de Ouro" class="cabecalho__img">
+                </a>
+                <h1 class="cabecalho__nome">Quindim de Ouro</h1>
+            </div>
+            
         </div>
         <nav id="cabecalho__navegacao">
             <ul class="cabecalho__menu">
@@ -67,9 +72,64 @@
                 <h2 class="banner__descricao">Os melhores bolos você encontra aqui</h2>
             </div>
         </section>
+        <section id="categorias">
+            <h2 class="categorias__titulo" data-animacao="left">Selecione a categoria</h2>
+            <div class="categorias__div" data-animacao="left">
+                <button class="categorias__botao" data-opcao="um">Bolos Brancos</button>
+                <button class="categorias__botao">Bolos de Chocolate</button>
+            </div>
+        </section>
+        <section id="secao__produtos" data-animacao="bottom">
+            <div class="produtos__container">
+                <a href="" class="item" data-categoria="">
+                    <figure class="item__figure">
+                        <img src="assets/imagens/cake.png" class="item__imagem">
+                    </figure>
+                    <ficaption class="item__nome">Bolo Ninho duplo com Morango</ficaption>
+                    <button class="item__botao">Saiba Mais</button>
+                </a>
+                <a class="item" data-categoria="">
+                    <figure class="item__figure">
+                        <img src="assets/imagens/chocolate-cake.png" class="item__imagem"></figure>
+                    <ficaption class="item__nome">Nome do item</ficaption>
+                    <button class="item__botao">Saiba Mais</button>
+                </a>
+                <a class="item" data-categoria="">
+                    <figure class="item__figure">
+                        <img src="assets/imagens/chocolate-cake.png" class="item__imagem">
+                    </figure>
+                    <ficaption class="item__nome">Nome do item</ficaption>
+                    <button class="item__botao">Saiba Mais</button>
+                </a>
+                <a class="item" data-categoria="">
+                    <figure class="item__figure">
+                        <img src="assets/imagens/cake.png" class="item__imagem">
+                    </figure>
+                    <ficaption class="item__nome">Nome do item</ficaption>
+                    <button class="item__botao">Saiba Mais</button>
+                </a>
+                <a class="item" data-categoria="">
+                    <figure class="item__figure">
+                        <img src="assets/imagens/cake.png" class="item__imagem">
+                    </figure>
+                    <ficaption class="item__nome">Nome do item</ficaption>
+                    <button class="item__botao">Saiba Mais</button>
+                </a>
+            </div>
+        </section>
     </main>
 
+    <footer>
+        <img src="assets/imagens/logo.png" alt="Quindim de Ouro logo">
+        <div class="footer__conteudo">
+            <p>&copy; Todos os direitos reservados a Quindim de Ouro</p>
+            <p class="footer__telefone">WhatsApp: <a href="tel:+11 98324-5986">+55 (11) 98324-5986</a></p>
+        </div>
+        
+    </footer>
+
     <script src="assets/js/menu.js"></script>
+    <script src="assets/js/produtos.js"></script>
     <script src="assets/js/animacao.js"></script>
 </body>
 </html>

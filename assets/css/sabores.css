@@ -5,7 +5,7 @@
     background-color: var(--cor-titulo);
     padding-bottom: 1rem;
     opacity: 0;
-    transition: .7s;
+    transition: 1s;
 }
 
 .splide{

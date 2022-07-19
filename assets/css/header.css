@@ -29,7 +29,7 @@
 
 .cabecalho__nome{
     font-family: var(--fonte-titulo);
-    font-size: 45px;
+    font-size: 30px;
     font-weight: 500;
     color: var(--cor-titulo);
 }
@@ -60,7 +60,7 @@ button{
     align-items: center;
     border-radius: 10px;
     font-weight: 500;
-    padding: .7rem;
+    padding: .5rem;
     transition: all .2s ease-in-out;
     text-decoration: none;
     font-size: 19px;
@@ -240,6 +240,10 @@ button{
         height: auto;
     }
 
+    .menu__link{
+        display: block;
+    }
+
     .submenu__lista{
         padding: 1rem 0;
         border-bottom: 2px solid var(--cor-borda);
@@ -307,10 +311,13 @@ button{
 
     .submenu__lista{
         border: none;
-        padding: .5rem 1.3rem .5rem 1rem;
-        padding-right: 2rem;
         font-size: 18px;
         width: auto;
+    }
+
+    .menu__link{
+        display: block;
+        padding: .5rem 1.3rem .5rem 1rem;
     }
 
     .submenu__lista:last-child{

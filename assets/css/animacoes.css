@@ -6,3 +6,7 @@
 [data-animacao = "bottom"]{
     transform: translate3d(0,50px,0);
 }
+
+[data-animacao = "left"]{
+    transform: translate3d(-50px,0,0);
+}

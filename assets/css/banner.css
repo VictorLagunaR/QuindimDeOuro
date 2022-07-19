@@ -1,14 +1,13 @@
 #banner{
     align-items: center;
     justify-content: flex-end;
-    width: 100vw;
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
 .banner__imagem{
-    width: 100%;
+    width: 100vw;
     height: 350px;
     object-fit: cover;
     opacity: 0;
@@ -45,11 +44,11 @@
 
 @media screen and (min-width:1220px) {
     .banner__titulo{
-        font-size: 45px;
+        font-size: 50px;
         font-weight: 600;
     }
 
     .banner__descricao{
-        font-size: 30px;
+        font-size: 33px;
     }
 }
