@@ -15,7 +15,7 @@
 .item{
     position: relative;
     align-items: center;
-    background-color: #f3dfb8fd;
+    background-color: #fefefe41;
     border-radius: 10px;
     box-shadow: 4px 4px 8px -6px #797979;
     gap: .3rem;
@@ -40,6 +40,7 @@
 }
 
 .item__imagem{
+    border-radius:10px ;
     object-fit: cover;
     width: 130px;
     height: 150px;
@@ -69,7 +70,9 @@
 
 .item__botao:hover{
     background-color: var(--cor-fundo);
+    box-shadow: 0 0 0 2px  var(--cor-texto-botoes);
     color: var(--cor-texto);
+
 }
 
 @media screen and (min-width:768px) {

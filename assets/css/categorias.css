@@ -37,6 +37,8 @@
 
 .categorias__botao:hover{
     background-color:var(--cor-texto-botoes);
-    color: #fefefe;
     box-shadow: 2px 3px 15px  -7px var(--cor-fundo);
+    color: #fefefe;
+    cursor: pointer;
+    
 }
