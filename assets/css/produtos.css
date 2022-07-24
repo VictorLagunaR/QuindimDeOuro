@@ -15,24 +15,18 @@
 .item{
     position: relative;
     align-items: center;
-    background-color: #f3dfb8fd;
+    background-color: #f3dfb8;
     border-radius: 10px;
     box-shadow: 4px 4px 8px -6px #797979;
     gap: .3rem;
-    height: 250px;
+    min-height: 250px;
     max-width: 250px;
     display: flex;
     flex-direction: column;
     padding: 1.5rem 1rem;
     justify-content: center;
-
     text-decoration: none;
 }
-
-.item__figure{
-    margin-top: 2.5rem;
-}
-
 
 
 .item__imagem:hover{

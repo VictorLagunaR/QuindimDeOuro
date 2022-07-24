@@ -10,6 +10,8 @@ footer{
     padding: 0 1.7rem;
     text-align: center;
     gap: 1rem;
+    margin-top: 2rem;
+    border-top: .4px solid var(--cor-borda);
 }
 
 footer img{

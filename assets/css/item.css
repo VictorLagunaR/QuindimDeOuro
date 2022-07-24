@@ -1,0 +1,132 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem .5rem;
+    position: relative;
+    font-family: var(--fonte);
+
+}
+
+.container__conteudo{
+    align-items: center;
+    display: flex;
+    gap: 1.3rem;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1.3rem;
+    margin-bottom: 1rem;
+    transition: 1s;
+}
+
+.conteudo__titulo{
+    color: var(--cor-titulo);
+    font-family: var(--fonte);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+    transition: .6s;
+}
+
+.conteudo__imagem{
+    border-radius: 5px;
+    width: 100%;
+    height:350px;
+    object-fit: cover;
+    opacity: 0;
+    margin:1rem;
+    transition: .8s;
+    width: 90%;
+}
+
+.conteudo__descricao{
+    color: var(--cor-texto);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: center;
+    transition: .6s;
+}
+
+.container__pedir{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1rem 2rem;
+    justify-content: center;
+    width: 85%;
+}
+
+.pedir__titulo{
+    color: var(--cor-titulo);
+    font-family: var(--fonte);
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: .5rem;
+    text-align: center;
+}
+
+.container__pedir .app{line-height: 22px;}
+
+.container__pedir p{
+    color: var(--cor-texto);
+    font-family: var(--fonte);
+    font-weight: 500;
+}
+
+
+@media screen and (min-width:768px) {
+    .conteudo__imagem{
+        height: 550px;
+    }
+
+    .conteudo__titulo{font-size: 35px;}
+
+    .conteudo__descricao{font-size: 18px; line-height: 20px;}
+
+    .container__pedir .app{width: 50%;}
+}
+
+@media screen and (min-width:1220px) {
+    .container{
+        flex-direction: row;
+        padding: 2rem;
+        margin: 0 10rem;
+    }
+
+    .conteudo__imagem{
+        width: 60%;
+        height: 550px;
+    }
+
+    .container__conteudo{
+        padding: 2rem;
+        margin-left: 2rem;
+
+    }
+
+    .conteudo__titulo{
+        font-size: 38px;
+    }
+    
+    .conteudo__descricao{
+        width: 70%;
+        font-size: 19px;
+    }
+
+    .container__pedir{
+        width: 400px;
+    }
+
+    .pedir__titulo{
+        font-size: 27px;
+        margin-bottom: .2rem;
+    }
+
+    .container__pedir .app{
+        width: 70%;
+    }
+}

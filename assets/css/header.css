@@ -8,7 +8,7 @@
     padding:1.5rem;
     position: relative;
     z-index: 9999;
-    box-shadow: 0px 0 5px 0 #e7e6e6;
+    box-shadow: 0px 0 4px 0 #4d4d4d2f;
 }
 
 .cabecalho__container{
@@ -150,7 +150,6 @@ button{
 @media screen and (max-width:1219px) {
     .cabecalho{
         height: 95px;
-        flex-direction: row-reverse;
         justify-content: space-between;
     }
 
@@ -208,7 +207,8 @@ button{
     #cabecalho__navegacao.ativo .cabecalho__menu{
         background-color: var(--cor-fundo);
         /*Possível mudança no futuro*/
-        height: 620px ;
+        height: 100vh ;
+        padding-left: .2rem;
         visibility: visible;
     }
 
