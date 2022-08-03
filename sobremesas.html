@@ -72,9 +72,11 @@
         <section id="categorias">
             <h2 class="categorias__titulo" data-animacao="left">Selecione a categoria</h2>
             <div class="categorias__div" data-animacao="left">
-                <button class="categorias__botao" data-opcao="um">Tortas Doces</button>
-                <button class="categorias__botao">Bombons</button>
-                <button class="categorias__botao">Doces Quentes</button>
+                <button class="categorias__botao" data-todos>Todos</button>
+                <button class="categorias__botao" data-opcao="um">Tortas</button>
+                <button class="categorias__botao" data-opcao="dois">Bombons</button>
+                <button class="categorias__botao" data-opcao="tres">Doces Quentes</button>
+                <button class="categorias__botao" data-opcao="quatro">brownies</button>
             </div>
         </section>
         <section id="secao__produtos" data-animacao="bottom">
@@ -86,14 +88,14 @@
                     <ficaption class="item__nome">Quindim</ficaption>
                     <button class="item__botao">Saiba Mais</button>
                 </a>
-                <a href="paginas-itens/sobremesas/pao-de-mel.html" class="item" data-categoria="">
+                <a href="paginas-itens/sobremesas/pao-de-mel.html" class="item" data-categoria="dois">
                     <figure class="item__figure">
                         <img src="assets/imagens/bombom-pao-de-mel.jpg" class="item__imagem">
                     </figure>
                     <ficaption class="item__nome">Pão de Mel</ficaption>
                     <button class="item__botao">Saiba Mais</button>
                 </a>
-                <a href="paginas-itens/sobremesas/bombom-de-morango.html" class="item" data-categoria="">
+                <a href="paginas-itens/sobremesas/bombom-de-morango.html" class="item" data-categoria="dois">
                     <figure class="item__figure">
                         <img src="assets/imagens/bombom-de-morango.jpg" class="item__imagem"></figure>
                     <ficaption class="item__nome">Bombom de Morango</ficaption>
@@ -105,21 +107,21 @@
                     <ficaption class="item__nome">Coxinha de Morango</ficaption>
                     <button class="item__botao">Saiba Mais</button>
                 </a>
-                <a href="paginas-itens/sobremesas/brownie-ninho.html" class="item" data-categoria="">
+                <a href="paginas-itens/sobremesas/brownie-ninho.html" class="item" data-categoria="quatro">
                     <figure class="item__figure">
                         <img src="assets/imagens/brownie-ninho.jpg" class="item__imagem">
                     </figure>
                     <ficaption class="item__nome">Brownie Ninho</ficaption>
                     <button class="item__botao">Saiba Mais</button>
                 </a>
-                <a href="paginas-itens/sobremesas/brownie-brigadeiro-ao-leite.html" class="item" data-categoria="">
+                <a href="paginas-itens/sobremesas/brownie-brigadeiro-ao-leite.html" class="item" data-categoria="quatro">
                     <figure class="item__figure">
                         <img src="assets/imagens/brownie-brigadeiro-ao-leite.jpg" class="item__imagem">
                     </figure>
                     <ficaption class="item__nome">Brownie Brigadeiro ao Leite</ficaption>
                     <button class="item__botao">Saiba Mais</button>
                 </a>
-                <a href="paginas-itens/sobremesas/brownie-brigadeiro-duo.html" class="item" data-categoria="">
+                <a href="paginas-itens/sobremesas/brownie-brigadeiro-duo.html" class="item" data-categoria="quatro">
                     <figure class="item__figure">
                         <img src="assets/imagens/brownie-brigadeiro-duplo.jpg" class="item__imagem">
                     </figure>
@@ -133,7 +135,7 @@
                     <ficaption class="item__nome">Pudim</ficaption>
                     <button class="item__botao">Saiba Mais</button>
                 </a>
-                <a href="paginas-itens/sobremesas/torta-de-morango.html" class="item" data-categoria="">
+                <a href="paginas-itens/sobremesas/torta-de-morango.html" class="item" data-categoria="um">
                     <figure class="item__figure">
                         <img src="assets/imagens/torta-de-morango.jpg" class="item__imagem">
                     </figure>
@@ -155,5 +157,6 @@
 
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/animacao.js"></script>
+    <script src="assets/js/produtos.js"></script>
 </body>
 </html>

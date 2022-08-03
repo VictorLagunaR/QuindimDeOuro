@@ -7,12 +7,11 @@
 }
 
 .banner__imagem{
-    width: 100vw;
+    width: 100%;
     height: 350px;
     object-fit:cover;
     opacity: 0;
     transition: .7s;
-    
 }
 
 .banner__conteudo{
@@ -21,10 +20,11 @@
     flex-direction: column;
     gap: .5rem;
     position:absolute;
-    color: var(--cor-titulo);
+    color: #a87329;
     font-family: var(--fonte);
     opacity: 0;
     transition: 1s;
+    text-shadow: 0 -2px 0 #c77f1a;
 }
 
 .banner__titulo{

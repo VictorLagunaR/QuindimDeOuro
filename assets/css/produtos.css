@@ -18,6 +18,8 @@
     background-color: #f3dfb8;
     border-radius: 10px;
     box-shadow: 4px 4px 8px -6px #797979;
+    -webkit-box-shadow: 4px 4px 8px -6px #797979;
+    -moz-box-shadow:4px 4px 8px -6px #797979;
     gap: .3rem;
     min-height: 250px;
     max-width: 250px;

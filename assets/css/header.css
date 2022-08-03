@@ -9,6 +9,8 @@
     position: relative;
     z-index: 9999;
     box-shadow: 0px 0 4px 0 #4d4d4d2f;
+    -webkit-box-shadow: 0px 0 4px 0 #4d4d4d2f;
+    -moz-box-shadow: 0px 0 4px 0 #4d4d4d2f;
 }
 
 .cabecalho__container{
@@ -303,6 +305,8 @@ button{
         background: var(--cor-fundo);
         border-radius: 0px 10px 10px 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.123);
+        -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.123);
+        -moz-box-shadow:0 4px 10px rgba(0, 0, 0, 0.123);
         opacity: 0;
         top: 40px;
         position: absolute;

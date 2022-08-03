@@ -5,5 +5,19 @@ body{
     font-family: var(--fonte);
     font-size: 18px;
     background-color: var(--cor-fundo);
-    min-height: 100vh;
+    min-height: 100vh; 
+}
+
+body::-webkit-scrollbar{
+    width: 13px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: var(--cor-fundo);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(146, 101, 18);
+    border: 3px solid var(--cor-fundo);
+    border-radius: 20px;
 }
