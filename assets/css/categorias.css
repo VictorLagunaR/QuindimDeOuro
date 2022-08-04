@@ -33,6 +33,7 @@
     font-weight: 500;
     padding: .5rem;
     transition: .3s;
+    min-width: 140px;
 }
 
 .categorias__botao:hover{

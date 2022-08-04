@@ -1,76 +1,55 @@
 
-//recebendo os botões da parte de categoria
+//recebendo as opções dos itens para categorização
 const mostrar = document.querySelector('[data-todos]')
-const opcaoUm = document.querySelector('[data-opcao=um]')
-const opcaoDois = document.querySelector('[data-opcao=dois]')
-const opcaoTres = document.querySelector('[data-opcao=tres]')
-const opcaoQuatro = document.querySelector('[data-opcao=quatro]')
+const opcoes = document.querySelectorAll('[data-opcao]');
 
 //recebendo todos os itens categorizados
 const categorias = document.querySelectorAll('[data-categoria]')
 
+
+//função para desaparecer todos os itens (chamada na função opcao)
 function desaparecendoTodoAsOpcoes() {
     const opcoes = document.querySelectorAll('[data-categoria]')
     for (let x = 0; x < opcoes.length; x++) {
-        opcoes[x].style.display="none";
+        opcoes[x].classList.add('disappear');
+        opcoes[x].classList.remove('show');
     }
 }
 
+
+//função para mostrar todos os itens
 function mostrarTodos() {
     const opcoes = document.querySelectorAll('[data-categoria]')
     for (let x = 0; x < opcoes.length; x++) {
-        opcoes[x].style.display="flex";
+        opcoes[x].classList.remove('disappear');
+        opcoes[x].classList.add('show');
         
     }
 }
 
-function opcao1() {
 
+//função para mostrar os itens que foram selecionados pelo o botão 
+function opcao() {
+    
     desaparecendoTodoAsOpcoes();
 
-    const opcoes1 = document.querySelectorAll('[data-categoria = um]');
-    for (let x = 0; x < opcoes1.length; x++) {
-        opcoes1[x].style.display = "flex";
-        
-    }
-    
+        for (let i = 0; i < categorias.length; i++) {
+            
+            if (this.dataset.opcao == categorias[i].dataset.categoria) {
+                categorias[i].classList.remove('disappear');
+                categorias[i].classList.add('show');
+                
+            }
+
+        }   
+
 }
 
-function opcao2() {
-    
-    desaparecendoTodoAsOpcoes();
+//estrutura de repetição para criar um addEvenrListener a todos os botões que existem na página
+for (let position = 0; position < opcoes.length; position++) {
+ 
+    opcoes[position].addEventListener('click', opcao)    
 
-    const opcoes2 = document.querySelectorAll('[data-categoria = dois]')
-    for (let x = 0; x < opcoes2.length; x++) {
-        opcoes2[x].style.display = "flex";
-        
-    }
-}
-
-function opcao3() {
-    
-    desaparecendoTodoAsOpcoes();
-
-    const opcoes3 = document.querySelectorAll('[data-categoria = tres]')
-    for (let x = 0; x < opcoes3.length; x++) {
-        opcoes3[x].style.display = "flex";
-        
-    }
-}
-
-function opcao4() {
-    
-    desaparecendoTodoAsOpcoes();
-
-    const opcoes4 = document.querySelectorAll('[data-categoria = quatro]')
-    for (let x = 0; x < opcoes4.length; x++) {
-        opcoes4[x].style.display = "flex";
-        
-    }
 }
 
 mostrar.addEventListener('click', mostrarTodos);
-opcaoUm.addEventListener('click', opcao1);
-opcaoDois.addEventListener('click', opcao2);
-opcaoTres.addEventListener('click', opcao3);
-opcaoQuatro.addEventListener('click', opcao4);

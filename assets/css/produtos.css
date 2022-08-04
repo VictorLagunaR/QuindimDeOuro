@@ -1,3 +1,11 @@
+.show{
+    display: flex !important;        /*Classe ativa pelo o javascript nos itens para mostrar os itens*/
+}
+
+.disappear{
+    display: none !important;       /*Classe ativa pelo o javascript nos itens para desaparecer os itens*/
+}
+
 #secao__produtos{
     align-items: center;
     justify-content: center;
