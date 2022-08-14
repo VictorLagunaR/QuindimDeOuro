@@ -1,5 +1,6 @@
 [data-animacao]{
     opacity: 0;
+    transition: 1s;
 }
 
 [data-animacao].animacao{

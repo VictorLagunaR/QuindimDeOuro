@@ -66,12 +66,13 @@ button{
     transition: all .2s ease-in-out;
     text-decoration: none;
     font-size: 19px;
+
 }
 
 .menu__lista:hover{
     cursor: pointer;
-    background-color: #fefefe;
 }
+
 
 .menu__link{
     color: var(--cor-texto-botoes);
@@ -125,7 +126,7 @@ button{
 }
 
 .app{
-    background: var(--cor-borda);
+
     border: 2px solid var(--cor-borda);
     border-radius: 20px;
     color: #f2f2f2;
@@ -158,6 +159,7 @@ button{
     .cabecalho__nome{
         display: none;
     }
+
     .cabecalho__menu{
         visibility: hidden;
         display: flex;
@@ -272,22 +274,31 @@ button{
         justify-content: space-around;
     }
 
-
-
-    .cabecalho__menu{
-        display: flex;
-        visibility: visible;
+    .cabecalho__nome{
+        display: none;
     }
 
     .navegacao__botao{
         display: none;
     }
 
+    .menu__lista{
+        background-image: linear-gradient(#fefefe, #fefefe);
+        background-repeat: no-repeat;
+        background-size: 0% 100%;
+        background-position-x: right;
+        transition: background-size .8s;
+    }
+
+    .menu__lista:hover{
+        background-size: 100% 100%;
+        background-position-x: left;
+    }
+
     #produtos{
         display: flex;
         position: relative;
         align-items:center ;
-        transition:.5s all;
     }
 
     #produtos.ativo #submenu{
@@ -332,15 +343,27 @@ button{
         border-radius: 0 10px 0 0;
     }
 
-
+    .app{
+        background-image: linear-gradient(#A67926, #A67926);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position-y: bottom;
+        transition: background-size .5s;
+    }
 
     .app:hover{
         color: var(--cor-titulo);
         cursor: pointer;
-        background-color: transparent;
+        background-size: 100% 0%;
     }
 
     .app:hover .redes-socias ~ a{
         color: var(--cor-texto);
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .cabecalho__nome{
+        display: flex;
     }
 }

@@ -16,7 +16,7 @@
     color: var(--cor-fundo);
     text-align: center;
     font-family: var(--fonte-h1);
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 500;
     line-height: 1.1em;
     padding: 2rem .5rem 0 .5rem;
@@ -26,7 +26,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2.5rem 0;
+    padding: 2rem 0;
     width: 100%;
     height: auto;
 }
@@ -77,8 +77,12 @@
 
 .container__botao{
     position: absolute;
-    background-color: var(--cor-fundo);
-    border: 2px solid transparent;
+    background-image: linear-gradient(#FCF0D9, #FCF0D9);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position-y: bottom;
+    transition: background-size .5s;
+    outline: 2px solid transparent;
     border-radius: 15px;
     color: var(--cor-titulo);
     display: inline-block;
@@ -86,7 +90,7 @@
     font-weight: 500;
     padding: .5rem;
     text-decoration: none;
-    transition: .2s;
+    transition: .4s;
     bottom: .7rem;
     left: 50%;
     transform: translateX(-50%);
@@ -94,8 +98,10 @@
 
 .container__botao:hover{
     background-color: var(--cor-texto-botoes);
-    border-color: var(--cor-fundo);
+    outline-color: var(--cor-fundo);
     color: var(--cor-fundo);
+    cursor: pointer;
+    background-size: 100% 0%;
 }
 
 .splide__list{
@@ -121,9 +127,6 @@
         padding: 1rem 2rem;
     }
 
-    .sabores__titulo{
-        font-size: 30px;
-    }
 }
 
 @media screen and (min-width:1220px) {
@@ -132,6 +135,7 @@
         gap: 1rem;
         justify-content: space-around;
     }
+
     #image-carousel{
         width: 1150px;
     }
