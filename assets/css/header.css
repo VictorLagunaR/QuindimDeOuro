@@ -261,6 +261,7 @@ button{
     }
 
     .app{
+        background-color: var(--cor-borda);
         display: block;
         text-decoration: none;
         width: calc(100% - 5rem);
