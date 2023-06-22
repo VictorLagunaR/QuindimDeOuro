@@ -137,6 +137,18 @@
         splide.mount();
 
     </script>
-    
+    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
+    <script>
+        (function () {
+            window.onload = function () {
+                new BlipChat()
+                    .withAppKey('cXVpbmRpbXJvdXRlcjE6MDMyM2Y5NzAtMTQxMy00Nzk0LWJiMmYtYjYxODY2ZmRkZDg2')
+                    .withButton({"color":"#0096fa","icon":""})
+                    .withCustomCommonUrl('https://victor-laguna-wcwzv.chat.blip.ai/')
+                    .build();
+            }
+        })();
+    </script>
+            
 </body>
 </html>
